@@ -21,5 +21,10 @@ public class Main {
         playlist.addSong(new Song("Impossible Soul", "Sufjan Stevens", 1748));
         playlist.addSong(new Song("The Wheels On The Bus", "King Henry VIII", 30));
 
+        playlist.play();
+
+        playlist.shuffle();
+
+        playlist.play();
     }
 }

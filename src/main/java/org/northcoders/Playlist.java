@@ -7,24 +7,28 @@ public class Playlist {
     private List<Song> songs;
 
     public Playlist() {
-        songs = new ArrayList<>();
+        this.songs = new ArrayList<>();
     }
 
     public void addSong(Song song) {
-        songs.add(song);
+        this.songs.add(song);
     }
 
     public void addSongs(List<Song> songs) {
-        songs.addAll(songs);
+        this.songs.addAll(songs);
     }
 
     public void shuffle() {
-        Collections.shuffle(songs);
+        System.out.println(System.lineSeparator());
+        System.out.println("*** SHUFFLING playlist ***");
+        Collections.shuffle(this.songs);
     }
 
     public void play() {
-        for (int i = 0; i <= songs.size(); i++) {
-            System.out.println("Playing: " + songs.get(i).getTitle() + " by " + songs.get(i).getArtist());
+        System.out.println(System.lineSeparator());
+        System.out.println("*** PLAYING playlist ***");
+        for (int i = 0; i < songs.size(); i++) {
+            System.out.println("Song " + (i + 1) + ": " + songs.get(i).getTitle() + " by " + songs.get(i).getArtist());
         }
     }
 
