@@ -14,6 +14,10 @@ public class Playlist {
         songs.add(song);
     }
 
+    public void addSongs(List<Song> songs) {
+        songs.addAll(songs);
+    }
+
     public void shuffle() {
         Collections.shuffle(songs);
     }
@@ -23,4 +27,6 @@ public class Playlist {
             System.out.println("Playing: " + songs.get(i).getTitle() + " by " + songs.get(i).getArtist());
         }
     }
+
+
 }
