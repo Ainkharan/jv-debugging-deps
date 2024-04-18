@@ -12,8 +12,10 @@ public class Main {
         List<Song> songs = new ArrayList<>(List.of(
                 new Song("Bohemian Rhapsody", "Queen", 354),
                 new Song("Imagine", "John Lennon", 183),
-                new Song("Like a Rolling Stone", "Bob Dylan", 366),
-                new Song("Billie Jean", "Michael Jackson", 294)
+                new Song("like a Rolling Stone", "Bob Dylan", 366),
+                new Song("billie Jean", "Michael Jackson", 294),
+                new Song("mukkala Mukkabula", "A R Rahman", 234)
+
         ));
 
         playlist.addSongs(songs);
