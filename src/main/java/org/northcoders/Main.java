@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Playlist playlist = new Playlist();
-
+      // int a = 0;
         List<Song> songs = new ArrayList<>(List.of(
                 new Song("Bohemian Rhapsody", "Queen", 354),
                 new Song("Imagine", "John Lennon", 183),
